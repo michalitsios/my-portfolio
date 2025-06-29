@@ -49,13 +49,7 @@ function ExperienceSection() {
   return (
     <section
       id="experience"
-      className="bg-[#0a192f] text-white py-20 px-6"
-      style={{
-        backgroundImage: "url('/textures/noise.png')",
-        backgroundSize: "100px",
-        backgroundRepeat: "repeat",
-      }}
-    >
+      className="bg-[#0a192f] text-white py-20 px-6">
       <div className="max-w-5xl mx-auto">
         <h1 className="text-5xl md:text-5xl mb-8 font-bold text-white">experience.</h1>
         <div className="grid md:grid-cols-4 gap-8">
