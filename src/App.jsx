@@ -147,7 +147,8 @@ function App() {
         I'm a <span className="bg-gradient-to-r from-yellow-400 to-rose-400 bg-clip-text text-transparent">web developer</span> passionate about building clean, responsive, and high-performance web apps. I focus on React, TailwindCSS and modern frontend technologies.
             </p>
             <p className="text-lg md:text-xl text-gray-400">
-              Currently working on personal projects, learning new stacks, and open to new opportunities.
+              Currently working on personal projects, learning new stacks, and open to new opportunities. 
+              Outside of work, I'm interested in following the developments of science. I also play a lot of video games.
             </p>
           </FadeInWhenVisible>
           {/* Image */}
