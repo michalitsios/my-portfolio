@@ -76,7 +76,7 @@ function App() {
           {/* Right: Icons */}
           <div className="col-span-2 flex justify-end items-center gap-4">
             <a
-              href="mailto:tolis788@gmail.com"
+              href="mailto:contact@michalitsios.dev"
               className="hover:text-gray-400 transition"
               aria-label="Email me"
             >
