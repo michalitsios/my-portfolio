@@ -57,11 +57,26 @@ function App() {
   return (
 
     <main className="bg-white text-black dark:bg-black dark:text-white font-ntr">
-      <header className="fixed top-0 left-0 w-full bg-[#0a192f] bg-opacity-30 backdrop-blur-lg text-white">
-        <nav className="max-w-5xl mx-auto px-6 py-3 grid grid-cols-6 items-center">
-          <div className="col-span-2 flex items-center gap-8">
-            <a href="#" className="hover:text-gray-400 font-bold transition text-sm whitespace-nowrap">Apostolos Michalitsios</a>
-            <ul className="flex gap-6 text-sm font-medium">
+      <header className="fixed top-0 left-0 w-full bg-[#0a192f] bg-opacity-30 backdrop-blur-lg text-white z-50">
+        <nav className="max-w-5xl mx-auto px-6 py-3 relative flex flex-col md:flex-row md:items-center md:justify-between gap-2">
+          
+          {/* Mobile: Icons πάνω δεξιά */}
+          <div className="absolute top-3 right-6 flex gap-4 md:hidden">
+            <a href="mailto:contact@michalitsios.dev" className="hover:text-gray-400 transition" aria-label="Email">
+              <FaEnvelope className="w-5 h-5" />
+            </a>
+            <a href="https://github.com/michalitsios" className="hover:text-gray-400 transition" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <FaGithub className="w-5 h-5" />
+            </a>
+            <a href="https://linkedin.com/in/michalitsios" className="hover:text-gray-400 transition" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <FaLinkedin className="w-5 h-5" />
+            </a>
+          </div>
+
+          {/* Όνομα + Links */}
+          <div className="flex flex-col md:flex-row md:items-center md:gap-8 w-full md:w-auto">
+            <a href="#" className="font-bold text-sm whitespace-nowrap">Apostolos Michalitsios</a>
+            <ul className="flex flex-wrap gap-4 text-sm font-medium mt-2 md:mt-0">
               <li><a href="#hero" className="hover:text-gray-400 font-bold transition">Home</a></li>
               <li><a href="#about" className="hover:text-gray-400 font-bold transition">About</a></li>
               <li><a href="#experience" className="hover:text-gray-400 font-bold transition">Experience</a></li>
@@ -69,31 +84,22 @@ function App() {
             </ul>
           </div>
 
-          <div className="col-span-2"></div>
-
-          <div className="col-span-2 flex justify-end items-center gap-4">
-
-          {/* Right: Icons */}
-          <div className="col-span-2 flex justify-end items-center gap-4">
-            <a
-              href="mailto:contact@michalitsios.dev"
-              className="hover:text-gray-400 transition"
-              aria-label="Email me"
-            >
-              <FaEnvelope className="w-5 h-5" />
+          {/* Desktop: icons δεξιά */}
+          <div className="hidden md:flex gap-4">
+            <a href="mailto:contact@michalitsios.dev" className="hover:text-gray-400 transition" aria-label="Email">
+              <FaEnvelope className="w-5 h-5 sm:w-6 sm:h-6" />
             </a>
-
             <a href="https://github.com/michalitsios" className="hover:text-gray-400 transition" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-              <FaGithub className="w-5 h-5" />
+              <FaGithub className="w-5 h-5 sm:w-6 sm:h-6" />
             </a>
-
             <a href="https://linkedin.com/in/michalitsios" className="hover:text-gray-400 transition" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-              <FaLinkedin className="w-5 h-5" />
+              <FaLinkedin className="w-5 h-5 sm:w-6 sm:h-6" />
             </a>
-          </div>
           </div>
         </nav>
       </header>
+      
+
 
       {/* Hero Section */}
       
